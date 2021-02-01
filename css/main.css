@@ -1,0 +1,246 @@
+@charset 'utf-8';
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.05em;
+    background: #000;
+    /* background: #000; */
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.backgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.backgroundImg > img {
+  width: 100%;
+}
+
+.container {
+    /* iPhone 가로 스크롤 방지 */
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    width: 1200px;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+}
+
+.header > a {
+    display: block;
+    font-size: 2rem;
+}
+
+.header > a:nth-child(odd):hover {
+  border-bottom: solid #fff 2px;
+}
+
+// 섹션
+.section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.section > div > h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.homeImg {
+    height: 30rem;
+}
+
+.keyringImg {
+    height: 30rem;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+#section-01 {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 16rem 0 0;
+}
+
+#section-01 > video {
+  width: 80vh;
+}
+
+#section-02 {
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+
+#section-02 > h3 {
+  font-size: 1.4rem;
+}
+
+#section-02 > .main-message {
+  padding-top: 8rem;
+}
+
+#section-02 > .about-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 8rem auto 4rem;
+}
+
+#section-02 > .main-message > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 3rem auto;
+}
+
+#section-02 > .main-message > p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 1.9em;
+  margin: 3rem auto;
+  width: 1000px;
+}
+
+#section-02 > .main-message > .desc-wrap {
+  width: 100%;
+  font-size: 1.5rem;
+  word-break: keep-all;
+  line-height: 1.9em;
+  margin-bottom: 1.9em;
+}
+
+#section-02 > .main-message > .desc-wrap > .desc-elem {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-elem-name {
+  display: block;
+  flex: 1 1;
+}
+
+.desc-elem-text {
+  display: block;
+  flex: 2 2;
+}
+
+.desc-elem-text > a:hover {
+  border-bottom: solid #fff 2px;
+} 
+
+.logo-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-wrap > img {
+  height: 4rem;
+}
+
+.key-link-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+  top: -50px;
+}
+
+.keyring-elem > a {
+  display: block;
+  width: 100%;
+}
+
+.keyring-elem {
+  width: 350px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.keyring-elem:nth-child(3n+2) {
+  top: 200px;
+}
+
+
+.keyring-elem > a > video {
+  width: 100%;
+}
+
+.keyring-desc {
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.background-gradi {
+  z-index:  -1;
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle farthest-corner at 70% 90%, rgba(0,0,0,0.3), transparent),
+  radial-gradient(circle farthest-corner at 20% 90%, rgba(0,0,0,0.3), transparent),
+  radial-gradient(ellipse farthest-corner at 0% 50%, rgba(215,255,255,0.4), transparent),
+  radial-gradient(ellipse farthest-corner at 60% 40%, rgba(255,255,205,0.4), transparent),
+  radial-gradient(circle farthest-corner at 85% -50%, rgba(255,205,205,0.4), transparent),
+  radial-gradient(ellipse farthest-corner at 35% 100%, rgba(255,255,205,0.4), transparent),
+  radial-gradient(circle farthest-corner at 35% 0%, rgba(255,255,255,1), transparent);
+}
+
+.background-white {
+  z-index:  -1;
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
