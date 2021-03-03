@@ -1,0 +1,222 @@
+@charset 'utf-8';
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.05em;
+    background: #000;
+    /* background: #000; */
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.backgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.backgroundImg > img {
+  width: 100%;
+}
+
+.container {
+    /* iPhone 가로 스크롤 방지 */
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    width: 1200px;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+}
+
+.header > a {
+    display: block;
+    font-size: 2rem;
+}
+
+.header > a:nth-child(odd):hover {
+  border-bottom: solid #fff 2px;
+}
+
+.section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.section > div > h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.homeImg {
+    height: 30rem;
+}
+
+.keyringImg {
+    height: 30rem;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+#section-01 {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 16rem 0 0;
+}
+
+#section-01 > video {
+  width: 80vh;
+}
+
+#section-02 {
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+
+#section-02 > h3 {
+  font-size: 1.4rem;
+}
+
+#section-02 > .main-message {
+  padding-top: 8rem;
+}
+
+#section-02 > .about-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 8rem auto 4rem;
+}
+
+#section-02 > .main-message > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 3rem auto;
+}
+
+#section-02 > .main-message > p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 1.9em;
+  margin: 3rem auto;
+  width: 1000px;
+}
+
+#section-02 > .main-message > .desc-wrap {
+  width: 100%;
+  font-size: 1.5rem;
+  word-break: keep-all;
+  line-height: 1.9em;
+  margin-bottom: 1.9em;
+}
+
+#section-02 > .main-message > .desc-wrap > .desc-elem {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-elem-name {
+  display: block;
+  flex: 1 1;
+}
+
+.desc-elem-text {
+  display: block;
+  flex: 2 2;
+}
+
+.desc-elem-text > a:hover {
+  border-bottom: solid #fff 2px;
+} 
+
+.logo-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-wrap > img {
+  height: 4rem;
+}
+
+.key-link-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.keyring-elem > a {
+  display: block;
+  width: 100%;
+}
+
+.keyring-elem {
+  width: 300px;
+  margin: 20px;
+}
+
+.keyring-elem:nth-child(3n+2) {
+  margin-top: 160px;
+}
+
+.keyring-elem > a > video {
+  width: 100%;
+}
+
+.keyring-desc {
+  padding: 0.5rem;
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 6px 20px 0 rgba( 0, 0, 0, 0.25 );
+  backdrop-filter: blur( 12px );
+  -webkit-backdrop-filter: blur( 12px );
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.25 );
+  opacity: 0;
+}
