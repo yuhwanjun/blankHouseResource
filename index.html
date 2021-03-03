@@ -9,9 +9,20 @@
 	<link rel="stylesheet" href="css/default.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="preload" as="style" href="css/main.css">
+    <script>
+        // window.addEventListener('load',function(){
+        //     document.querySelector('body').classList.add("overH");
+        // });
+
+    </script>
+    
 </head>
 
 <body>
+    <div class="loading-page">
+        <img src="assets/svg/logo_white.svg" alt="">
+    </div>
+
 	<div class="container">
 		<header class="header">
 			<a href="page/about.html"><img src="assets/img/1_About.svg" alt=""></a>
@@ -23,15 +34,13 @@
         <section class="section" id="section-01">
         <div class="homeTour">
           <a href="./3d/index.html">
-            <img class="homeImg" src="assets/svg/homeTour_grey.svg" alt="">
+            <img class="homeImg" src="assets/keyring_gif/leaflet_600.gif" alt="">
           </a>
           <h2><img src="assets/img/VRtour_white.svg" alt=""></h2>
         </div>
         <div class="keyringTour">
           <a href="page/personalTour.html">
-            <video class="keyringImg" poster="assets/video/keyring.gif" autoplay muted loop>
-              <source src="assets/video/keyring.webm" type="video/webm">
-            </video>
+            <img class="keyringImg" src="assets/keyring_gif/question_600.gif" alt="">
           </a>
           <h2><img src="assets/img/Personaltour_white.svg" alt=""></h2>
         </div>
@@ -47,5 +56,6 @@
       
         <footer class="footer"></footer>
     </div>
+    
   </body>
 </html>

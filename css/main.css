@@ -26,12 +26,30 @@ h1 {
     font-size: 1.4rem;
 }
 
+.loading-page {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+.loading-page > h1 {
+    color: #fff;
+}
+
+
 .backgroundImg {
   position: absolute;
   z-index: -1;
   width: 100%;
   height: auto;
 }
+
 .backgroundImg > img {
   width: 100%;
 }
@@ -57,7 +75,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 10000;
+    z-index: 500;
 }
 
 .header > a {
@@ -251,6 +269,14 @@ h1 {
   background: #fff;
 }
 
+.phone_keyring_gif {
+    display: none;
+}
+
+.web_keyring_gif {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
   html {
       font-size: 10px;
@@ -404,5 +430,13 @@ h1 {
 
   .keyring-desc > img {
     height: 2rem;
+  }
+
+  .phone_keyring_gif {
+      display: block;
+  }
+
+  .web_keyring_gif {
+      display: none;
   }
 }
